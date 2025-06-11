@@ -1,9 +1,8 @@
-# docker-compose.yml
 version: '3'
 services:
-
   pact-broker:
-    image: pactfoundation/pact-broker:latest
+    build:
+      context: .
     ports:
       - "9292:9292"
     environment:
